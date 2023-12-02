@@ -1,0 +1,2 @@
+class Dategraph < ApplicationRecord
+end
