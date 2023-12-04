@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    attributes:
+      daily_activity:
+        activity_types:
+          sleep: '睡眠'
+          eat: '食事'
+          work: '仕事'
+          study: '学習'
+          commute: '移動'
+          entertainment: '娯楽'
+          personal: '私用'

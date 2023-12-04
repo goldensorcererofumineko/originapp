@@ -11,18 +11,19 @@
   has_many :sleep_records
   has_many :sleep_statistics
 
-## sleep_records テーブル
+## dategraphs テーブル
 
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| start_time  | datetime   |                                |
-| set_time    | time       |                                |
-| end_time    | time       |                                |
-| user        | references | null: false, foreign_key: true |
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| activity_type | string     |                                |
+| s_time        | datetime   |                                |
+| e_time        | datetime   |                                |
+| user          | references | null: false, foreign_key: true |
 
   belongs_to :user
 
 ## eat_records テーブル
+## 以下現在不要
 
 | Column                 | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
