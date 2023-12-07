@@ -7,12 +7,5 @@ class CreateDategraphs < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
-
-    create_table :activity_details do |t|
-      t.references :daily_activity, foreign_key: true
-      # ここに各活動に対する詳細情報のカラムを追加します
-
-      t.timestamps
-    end
   end
 end
