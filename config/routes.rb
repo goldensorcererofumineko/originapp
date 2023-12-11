@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :activities, only: :index
+  root to: "/"
+  resources :activities, only:[:index, :new, :create]
 end

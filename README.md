@@ -22,23 +22,14 @@
 
   belongs_to :user
 
-## eat_records テーブル
-## 以下現在不要
+## activity_details テーブル
 
-| Column                 | Type       | Options                        |
-| ---------------------- | ---------- | ------------------------------ |
-| meal_time_breakfast    | datetime   | null: false                    |
-| food_item_id_breakfast | integer    |                                |
-| breakfast              | string     |                                |
-| meal_time_lunch        | datetime   |                                |
-| food_item_id_lunch     | integer    |                                |
-| lunch                  | string     |                                |
-| meal_time_dinner       | datetime   |                                |
-| food_item_id_dinner    | integer    |                                |
-| dinner                 | string     |                                |
-| meal_time_snack        | datetime   |                                |
-| food_item_id_snack     | integer    |                                |
-| snack                  | string     |                                |
-| user                   | references | null: false, foreign_key: true |
+| Column                 | Type      | Options                        |
+| ---------------------- | --------- | ------------------------------ |
+| dategraphs             |references | foreign_key: true, index: true |
+| calories_consumed      | integer   |                                |
+| field_of_work          | string    |                                |
+| field_of_study         | string    |                                |
+| mode_of_transportation | string    |                                |
 
   belongs_to :user
