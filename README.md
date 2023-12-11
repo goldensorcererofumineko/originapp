@@ -8,8 +8,7 @@
 | encrypted_password  | string | null: false                |
 | name                | string | null: false                |
 
-  has_many :sleep_records
-  has_many :sleep_statistics
+  has_many :dategraphs
 
 ## dategraphs テーブル
 
@@ -21,6 +20,7 @@
 | user          | references | null: false, foreign_key: true |
 
   belongs_to :user
+  has_one :activity_detail
 
 ## activity_details テーブル
 
@@ -33,3 +33,4 @@
 | mode_of_transportation | string    |                                |
 
   belongs_to :user
+  belongs_to :dategraph
