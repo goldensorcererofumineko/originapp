@@ -74,3 +74,4 @@ end
 gem 'pry-rails'
 gem 'rubocop'
 gem 'devise'
+gem 'bootstrap', '~> 5.0.2'
